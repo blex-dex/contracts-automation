@@ -139,13 +139,6 @@ contract AutoOrderBase is Ownable {
         }
     }
 
-    /**
-     * @dev 内部函数，获取价格在给定范围内可执行的订单的键列表。
-     * @param lower uint256 可执行订单价格下限。
-     * @param upper uint256 可执行订单价格上限。
-     * @param price uint256 当前执行价格。
-     * @return keys bytes32[] 订单键的列表。
-     */
     function _getExecOrders(
         uint256 lower,
         uint256 upper,
